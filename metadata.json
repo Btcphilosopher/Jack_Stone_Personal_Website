@@ -1,0 +1,6 @@
+{
+  "name": "Jack Stone - Personal Website & Philosophy Blog",
+  "description": "A premium editorial personal website and philosophy blog for Jack Stone, contemporary philosopher and public thinker.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

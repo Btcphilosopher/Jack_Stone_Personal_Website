@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, serif;
+  --font-reading: "Lora", Georgia, serif;
+  --font-sans: "Inter", "Space Grotesk", system-ui, sans-serif;
+  --font-space: "Space Grotesk", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+  
+  --color-ivory: #F5F2ED;
+  --color-parchment: #ECE9E4;
+  --color-slate-dark: #1A1D1E;
+  --color-slate-deep: #0F1112;
+  --color-brass: #B8860B;
+  --color-oxblood: #602020;
+  --color-steel: #718096;
+}
+
+/* Base style resets and customizations */
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-ivory);
+  color: var(--color-slate-deep);
+  overflow-x: hidden;
+}
+
+/* Custom design aesthetics */
+.paper-grain {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.02) 1px, transparent 0);
+  background-size: 16px 16px;
+}
+
+.paper-grain-dark {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.015) 1px, transparent 0);
+  background-size: 16px 16px;
+}
+
+/* Classic scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F5F2ED;
+}
+.dark ::-webkit-scrollbar-track {
+  background: #0F1112;
+}
+::-webkit-scrollbar-thumb {
+  background: #B8860B;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #602020;
+}
+
+/* Text Selection colors */
+::selection {
+  background: #B8860B;
+  color: #F5F2ED;
+}
+
+/* Custom CSS diagram glow */
+.diagram-glow {
+  filter: drop-shadow(0 0 8px rgba(197, 168, 128, 0.2));
+}
